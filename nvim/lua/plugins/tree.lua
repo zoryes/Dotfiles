@@ -11,5 +11,3 @@ require("nvim-tree").setup({
 
 vim.keymap.set("n", "<C-n>", vim.cmd.NvimTreeToggle)
 vim.keymap.set("n", "<leader>d", vim.cmd.NvimTreeFocus)
-
-
