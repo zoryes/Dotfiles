@@ -30,6 +30,11 @@ vim.pack.add({
 	{ src = "https://github.com/stevearc/conform.nvim" },
 })
 
+-- treesitter
+vim.pack.add({
+	{ src = "https://github.com/nvim-treesitter/nvim-treesitter" },
+})
+
 -- plugin setup
 require("plugins.catppuccin")
 require("plugins.tree")
@@ -37,3 +42,4 @@ require("plugins.lualine")
 require("plugins.bufferline")
 require("plugins.telescope")
 require("plugins.conform")
+require("plugins.treesitter")
