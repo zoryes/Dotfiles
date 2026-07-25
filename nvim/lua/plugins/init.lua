@@ -1,20 +1,22 @@
 
--- add plugins by pack.nvim
+-- catppuccin 
 vim.pack.add { { src = "https://github.com/catppuccin/nvim", name = "catppuccin" } }
 
+-- tree 
 vim.pack.add({
-  { src = 'https://github.com/nvim-tree/nvim-web-devicons' }, -- optional
+  { src = 'https://github.com/nvim-tree/nvim-web-devicons' },
   { src = 'https://github.com/nvim-tree/nvim-tree.lua' },
 })
 
+-- lualine 
 vim.pack.add({
     'https://github.com/nvim-tree/nvim-web-devicons',
     'https://github.com/nvim-lualine/lualine.nvim'
 })
 
+-- bufferline 
 vim.pack.add({
 	{ src = "https://github.com/akinsho/nvim-bufferline.lua" },
-	-- Optional, but recommended for file icons
 	{ src = "https://github.com/nvim-tree/nvim-web-devicons" },
 })
 

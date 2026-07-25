@@ -108,8 +108,8 @@ alias zconfig="nvim ~/.zshrc"
 alias zsource="source ~/.zshrc"
 alias ohmyzsh="nvim ~/.oh-my-zsh"
 
-alias dotfiles="cd ~/Code/Dotfiles/NvChad2.5/"
-alias nvconfig="cd ~/.config/nvim/"
+alias dotfiles="cd ~/Code/Dotfiles/"
+alias vconf="cd ~/Code/Dotfiles/nvim"
 
 alias v="nvim"
 
