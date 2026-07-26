@@ -53,6 +53,11 @@ vim.pack.add({
 	{ src = "https://github.com/saghen/blink.pairs", version = vim.version.range("*") },
 })
 
+--which-key
+vim.pack.add({
+	{ src = "https://github.com/folke/which-key.nvim" },
+})
+
 -- plugin setup
 require("plugins.catppuccin")
 require("plugins.tree")
@@ -64,3 +69,4 @@ require("plugins.treesitter")
 require("plugins.lsp")
 require("plugins.cmp")
 require("plugins.pairs")
+require("plugins.whichkey")
