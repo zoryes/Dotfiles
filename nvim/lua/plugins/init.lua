@@ -42,6 +42,11 @@ vim.pack.add({
 	{ src = "https://github.com/mason-org/mason-lspconfig.nvim" },
 })
 
+-- blink
+vim.pack.add({
+	{ src = "https://github.com/saghen/blink.cmp", version = "v1.10.2" },
+})
+
 -- plugin setup
 require("plugins.catppuccin")
 require("plugins.tree")
