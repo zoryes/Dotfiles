@@ -9,22 +9,35 @@ require("mason-lspconfig").setup({
 -- global lsp mappings
 local on_attach = function(client, bufnr)
 	local opts = { noremap = true, silent = true }
+
 	-- open diagnostic
 	vim.keymap.set("n", "<leader>vd", function()
 		vim.diagnostic.open_float()
 	end, opts)
+
 	-- goto next
 	vim.keymap.set("n", "]d", function()
 		vim.diagnostic.jump({ count = 1 })
 	end, {
 		desc = "Next diagnostic",
 	})
+
 	-- goto prev
 	vim.keymap.set("n", "[d", function()
 		vim.diagnostic.jump({ count = -1 })
 	end, {
 		desc = "Previous diagnostic",
 	})
+
+	-- references
+	vim.keymap.set("n", "<leader>vr", function()
+		vim.lsp.buf.references()
+	end, opts)
+
+	-- definition
+	vim.keymap.set("n", "gd", function()
+		vim.lsp.buf.definition()
+	end, opts)
 end
 
 -- lua config
