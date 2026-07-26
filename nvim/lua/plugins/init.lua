@@ -42,9 +42,15 @@ vim.pack.add({
 	{ src = "https://github.com/mason-org/mason-lspconfig.nvim" },
 })
 
--- blink
+-- blink cmp
 vim.pack.add({
 	{ src = "https://github.com/saghen/blink.cmp", version = "v1.10.2" },
+})
+
+-- blink pairs
+vim.pack.add({
+	"https://github.com/saghen/blink.lib",
+	{ src = "https://github.com/saghen/blink.pairs", version = vim.version.range("*") },
 })
 
 -- plugin setup
@@ -56,4 +62,5 @@ require("plugins.telescope")
 require("plugins.conform")
 require("plugins.treesitter")
 require("plugins.lsp")
-require("plugins.blink")
+require("plugins.cmp")
+require("plugins.pairs")
