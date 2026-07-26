@@ -13,6 +13,11 @@ opt.softtabstop = 2
 opt.expandtab = true
 opt.smartindent = true
 opt.smarttab = true
+opt.wrap = false
+opt.scrolloff = 8
+opt.undofile = true
+opt.winborder = "rounded"
+opt.hlsearch = false
 
 g.loaded_netrw = 1
 g.loaded_netrwPlugin = 1
