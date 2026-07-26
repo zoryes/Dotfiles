@@ -62,4 +62,13 @@ vim.lsp.config("lua_ls", {
 	},
 })
 
-vim.lsp.enable("lua_ls")
+-- swift config
+vim.lsp.config("sourcekit", {
+	on_attach = on_attach,
+})
+
+-- enable all
+vim.lsp.enable({
+	"lua_ls",
+	"sourcekit",
+})
