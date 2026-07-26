@@ -19,7 +19,9 @@ Config files I use for my macOS setup
   - [fzf](https://github.com/junegunn/fzf)
   - [ranger](https://github.com/ranger/ranger)
   - [btop](https://github.com/aristocratos/btop)
+  - [delta](https://github.com/dandavison/delta)
 
 <img width="1309" alt="Screenshot 2024-03-30 at 12 16 41" src="https://github.com/ChiroxS/Dotfiles/assets/52329150/940ba01c-4bd4-4e7a-93d4-cf7df7dbefa1">
 
 ## Neovim setup 
+<img width="1307" height="754" alt="image" src="https://github.com/user-attachments/assets/9acdd96c-5f03-4d88-a75c-21d3df6d9ace" />
