@@ -35,6 +35,13 @@ vim.pack.add({
 	{ src = "https://github.com/nvim-treesitter/nvim-treesitter" },
 })
 
+-- lsp
+vim.pack.add({
+	{ src = "https://github.com/mason-org/mason.nvim" },
+	{ src = "https://github.com/neovim/nvim-lspconfig" },
+	{ src = "https://github.com/mason-org/mason-lspconfig.nvim" },
+})
+
 -- plugin setup
 require("plugins.catppuccin")
 require("plugins.tree")
@@ -43,3 +50,4 @@ require("plugins.bufferline")
 require("plugins.telescope")
 require("plugins.conform")
 require("plugins.treesitter")
+require("plugins.lsp")
