@@ -24,4 +24,5 @@ Config files I use for my macOS setup
 <img width="1309" alt="Screenshot 2024-03-30 at 12 16 41" src="https://github.com/ChiroxS/Dotfiles/assets/52329150/940ba01c-4bd4-4e7a-93d4-cf7df7dbefa1">
 
 ## Neovim setup 
-<img width="1307" height="754" alt="image" src="https://github.com/user-attachments/assets/9acdd96c-5f03-4d88-a75c-21d3df6d9ace" />
+<img width="1300" height="745" alt="image" src="https://github.com/user-attachments/assets/e03e8911-a70b-4595-811e-e8274bddba68" />
+
