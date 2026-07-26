@@ -12,3 +12,8 @@ require("which-key").setup({
 		spacing = 3,
 	},
 })
+
+require("which-key").add({
+	{ "<leader>v", group = "LSP" },
+	{ "<leader>f", group = "Telescope" },
+})
