@@ -6,30 +6,47 @@ require("mason-lspconfig").setup({
 	},
 })
 
-local map = vim.keymap
-local diag = vim.diagnostic
-local lsp = vim.lsp
-
 -- global lsp mappings
 local on_attach = function(client, bufnr)
 	local opts = { noremap = true, silent = true }
 	-- open diagnostic
-	map.set("n", "<leader>vd", function()
-		diag.open_float()
+	vim.keymap.set("n", "<leader>vd", function()
+		vim.diagnostic.open_float()
 	end, opts)
-	-- next diagnostic
-	map.set("n", "[d", function()
-		diag.goto_next()
-	end, opts)
-	-- prev diagnostic
-	map.set("n", "]d", function()
-		diag.goto_prev()
-	end, opts)
+	-- goto next
+	vim.keymap.set("n", "]d", function()
+		vim.diagnostic.jump({ count = 1 })
+	end, {
+		desc = "Next diagnostic",
+	})
+	-- goto prev
+	vim.keymap.set("n", "[d", function()
+		vim.diagnostic.jump({ count = -1 })
+	end, {
+		desc = "Previous diagnostic",
+	})
 end
 
--- apply the globals to all languages
-lsp.config("lua_ls", {
+-- lua config
+vim.lsp.config("lua_ls", {
 	on_attach = on_attach,
+	settings = {
+		Lua = {
+			runtime = {
+				version = "LuaJIT",
+			},
+
+			diagnostics = {
+				globals = { "vim" },
+			},
+
+			workspace = {
+				library = {
+					vim.env.VIMRUNTIME,
+				},
+			},
+		},
+	},
 })
 
-lsp.enable("lua_ls")
+vim.lsp.enable("lua_ls")
