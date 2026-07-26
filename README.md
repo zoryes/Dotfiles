@@ -27,11 +27,14 @@ Config files I use for my macOS setup
 <img width="1300" height="745" alt="image" src="https://github.com/user-attachments/assets/e03e8911-a70b-4595-811e-e8274bddba68" />
 <img width="1290" height="736" alt="image" src="https://github.com/user-attachments/assets/31d9dcc7-d140-4a6d-b822-45eaf6b5dcff" />
 
-
-- File explorer: nvim-tree, telescope
-- Syntax highlighting: treesitter
-- LSP: mason, lspconfig
-- Autoformat: conform
-- Tabs: bufferline
-- Statusline: lualine 
+- Theme               : catpuccin 
+- File explorer       : nvim-tree
+- Search              : telescope 
+- Syntax highlighting : treesitter
+- LSP                 : mason, lspconfig
+- Autocomplete        : blink.cmp
+- Brackets            : blink.pairs
+- Autoformat          : conform
+- Tabs                : bufferline
+- Status              : lualine 
 
