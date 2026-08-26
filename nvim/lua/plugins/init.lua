@@ -73,6 +73,11 @@ vim.pack.add({
 	{ src = "https://github.com/stevearc/aerial.nvim" },
 })
 
+-- gitsigns
+vim.pack.add({
+	{ src = "https://github.com/lewis6991/gitsigns.nvim" },
+})
+
 -- plugin setup
 require("plugins.catppuccin")
 require("plugins.tree")
@@ -88,3 +93,4 @@ require("plugins.whichkey")
 require("plugins.oil")
 require("plugins.flash")
 require("plugins.aerial")
+require("plugins.gitsigns")
