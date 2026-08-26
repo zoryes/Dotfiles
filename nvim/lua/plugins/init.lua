@@ -58,6 +58,11 @@ vim.pack.add({
 	{ src = "https://github.com/folke/which-key.nvim" },
 })
 
+-- oil
+vim.pack.add({
+	"https://github.com/stevearc/oil.nvim",
+})
+
 -- plugin setup
 require("plugins.catppuccin")
 require("plugins.tree")
@@ -70,3 +75,4 @@ require("plugins.lsp")
 require("plugins.cmp")
 require("plugins.pairs")
 require("plugins.whichkey")
+require("plugins.oil")
