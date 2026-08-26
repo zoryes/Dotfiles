@@ -63,6 +63,11 @@ vim.pack.add({
 	"https://github.com/stevearc/oil.nvim",
 })
 
+-- flash
+vim.pack.add({
+	{ src = "https://github.com/folke/flash.nvim" },
+})
+
 -- plugin setup
 require("plugins.catppuccin")
 require("plugins.tree")
@@ -76,3 +81,4 @@ require("plugins.cmp")
 require("plugins.pairs")
 require("plugins.whichkey")
 require("plugins.oil")
+require("plugins.flash")
