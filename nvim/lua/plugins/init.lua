@@ -68,6 +68,11 @@ vim.pack.add({
 	{ src = "https://github.com/folke/flash.nvim" },
 })
 
+-- aerial
+vim.pack.add({
+	{ src = "https://github.com/stevearc/aerial.nvim" },
+})
+
 -- plugin setup
 require("plugins.catppuccin")
 require("plugins.tree")
@@ -82,3 +87,4 @@ require("plugins.pairs")
 require("plugins.whichkey")
 require("plugins.oil")
 require("plugins.flash")
+require("plugins.aerial")
